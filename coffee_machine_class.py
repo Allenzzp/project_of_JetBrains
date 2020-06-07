@@ -28,7 +28,7 @@ The coffee machine has:
         CoffeeMac.cups += int(input("Write how many disposable cups of coffee do you want to add:\n"))
 
     def buy(self):
-        type_of_drk = input("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:\n")
+        type_of_drk = input("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back 2 main page:\n")
         if type_of_drk == "back":
             pass
         else:
@@ -58,7 +58,7 @@ The coffee machine has:
                         CoffeeMac.coffee_beans -= 20
                         CoffeeMac.money += 7
                         CoffeeMac.cups -= 1
-            else:
+            elif type_of_drk == "3":
                 if self.water < 200:
                     print("Sorry, not enough water!")
                 elif self.milk < 100:
@@ -72,6 +72,8 @@ The coffee machine has:
                     CoffeeMac.coffee_beans -= 12
                     CoffeeMac.money += 6
                     CoffeeMac.cups -= 1
+            else:
+                type_of_drk = input("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back 2 main page:\n")
 
     def take(self):
         print(f"I gave you ${self.money}")
@@ -90,8 +92,11 @@ The coffee machine has:
                 self.take()
             elif self.action == "buy":
                 self.buy()
-            else:
+            elif self.action == "exit":
                 CoffeeMac.status = False
+            else:
+                pass
+
 
 
 CoffeeMac()
