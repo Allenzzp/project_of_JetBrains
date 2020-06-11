@@ -7,4 +7,8 @@ educative and interesting. As you know, JetBrains forum allows users who complet
 and review others. I agree with that policy but I would like 2 inspire those who cannot find a way to solve the project. All the 
 projects are at the final stage.
 
-To be continued...
+Projects:
+1. Coffee Machine
+2. Credit Calculator
+3. Tic-Tac-Toe
+4. Rock-Paper-Scissors
