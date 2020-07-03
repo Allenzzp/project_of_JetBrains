@@ -13,3 +13,4 @@ Projects:
 3. Tic-Tac-Toe
 4. Rock-Paper-Scissors
 5. Matrix Matrix
+6. Bank System (Last medium level project)
